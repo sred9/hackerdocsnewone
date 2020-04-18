@@ -1,0 +1,60 @@
+@import '../../css/variables';
+
+.topics {
+  display: block;
+
+  @media (min-width: $mobile-breakpoint) {
+    display: flex;
+  }
+}
+
+.topic {
+  background: $daisy-white;
+  border: $border;
+  padding: 24px;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+ /* transition: box-shadow .25s ease-in-out, border-color .25s ease-in-out;*/
+  transition: none;
+  color: $text-normal;
+  text-decoration: none;
+  display: block;
+  flex: 1;
+  display: block;
+  height: fit-content;
+  
+  align-items: center;
+
+  @media (min-width: $tablet-breakpoint) {
+    display: flex;
+  }
+
+  &__image {
+    margin-right: 24px;
+   /* margin-bottom: 16px;*/
+   margin-bottom: 0;
+   
+  }
+
+  h2 {
+    /*margin: 8px 0 16px;*/
+	margin: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.topic + .topic {
+  margin-top: 40px;
+
+  @media (min-width: 640px) {
+    margin: 0 0 0 40px;
+  }
+}
+
+.topic:hover {
+  border-color: #d3d9e8;
+  box-shadow: 0 2px 4px rgba(211, 217, 232, .66);
+}
