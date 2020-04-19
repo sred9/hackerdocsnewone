@@ -47,13 +47,15 @@ class Search extends React.Component {
 
     return enabled ? (
       <form className="search">
-        <input
+        
+		<input
           className="search__input"
           id="algolia-doc-search"
           type="search"
           placeholder="Search docs"
           aria-label="Search docs"
         />
+
       </form>
     ) : null;
   }

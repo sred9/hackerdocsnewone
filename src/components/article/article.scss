@@ -10,6 +10,38 @@
   display: flex;
 }
 
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .article {
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  
+  }
+  
+  }
+  
+  /* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+ .article {
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  
+  }
+  
+}
+
+
 .article__inner {
   max-width: 800px;
   background-color: #ffffff;

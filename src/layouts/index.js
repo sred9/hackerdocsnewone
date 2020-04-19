@@ -11,6 +11,7 @@ import "../css/main.scss";
 
 const TemplateWrapper = ({ children }) => (
   <div>
+  
     <Helmet
       defaultTitle={GatsbyConfig.siteMetadata.title}
       meta={[
